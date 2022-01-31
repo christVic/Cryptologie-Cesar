@@ -36,6 +36,7 @@ def cryptanalyseForceBrute(alphabet,casser):
     if choix==0:
         f=open(ftexte,"r")
         texte=f.read().strip()
+        f.close()
     else:
         texte=input("\tSaisissez le texte à attaquer\n\t>")
 

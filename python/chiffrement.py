@@ -44,6 +44,7 @@ def chiffrerTexte(alphabet,chiffrer):
     if choix==0:
         f=open(ftexte,"r")
         texte=f.read().strip()
+        f.close()
     else:
         texte=input(texteInput)
 

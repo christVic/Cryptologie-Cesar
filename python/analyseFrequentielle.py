@@ -9,6 +9,7 @@ def readFrequences():
     fichier=f.read().strip()
     #ex : Francais=a/b/c/d/.../z;
     groupes=fichier.split(";")
+    f.close()
     for groupe in groupes:
         langage=groupe.split("=")
         key=langage[0]
@@ -71,6 +72,7 @@ def cryptanalyseFrequentielle():
     if choix==0:
         f=open("texteChiffre.txt","r")
         texte=f.read().strip()
+        f.close()
     else:
         texte=input("\tSaisissez le texte à attaquer\n\t>")
 
