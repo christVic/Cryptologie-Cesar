@@ -29,7 +29,8 @@ def getFrequences(alphabet,texte):
         frequences.append(frequence)
     return frequences
 
-def analyseFrequentielle(alphabet,langue,texte):
+def analyseFrequentielle(langue,texte):
+    alphabet=string.ascii_lowercase
     longueurAlphabet=len(alphabet)
     #frequences de la langue
     frequencesLangues=readFrequences()
@@ -52,7 +53,6 @@ def analyseFrequentielle(alphabet,langue,texte):
     return cle,resultat
 
 def cryptanalyseFrequentielle():
-    alphabet=string.ascii_lowercase
     print("Cryptanalyser un texte par analyse fréquentielle\n***************************")
 
     langue="Français"
@@ -76,6 +76,6 @@ def cryptanalyseFrequentielle():
     else:
         texte=input("\tSaisissez le texte à attaquer\n\t>")
 
-    cle,resultat=analyseFrequentielle(alphabet,langue,texte)
+    cle,resultat=analyseFrequentielle(langue,texte)
 
     print("\t>La clé est ",cle,"\n\t>",resultat)
