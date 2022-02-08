@@ -29,3 +29,4 @@ python3 main.py
 * Le texte à attaquer doit être assez long(minimum 3-4 mots differents) pour avoir un resultat correct
 * L'alphabet utilisé est a...z
 * Le fichier frequences.txt contient les fréquences d'apparition des lettres a...z en differentes langues
+* Les fréquences d'apparition des lettres sont tirées de [wikipedia](https://fr.wikipedia.org/wiki/Fr%C3%A9quence_d%27apparition_des_lettres_en_fran%C3%A7ais)
