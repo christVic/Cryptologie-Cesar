@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-from chiffrement import chiffrerTexte
-from bruteForce import cryptanalyseForceBrute
-from analyseFrequentielle import cryptanalyseFrequentielle
+from chiffrement import chiffrer_texte
+from bruteForce import cryptanalyse_force_brute
+from analyseFrequentielle import cryptanalyse_frequentielle
 
 import string
 
@@ -13,14 +13,14 @@ while True:
     action=int(input("Que voulez-vous faire?(Saisissez le numero correspondant à l'action)\n>"))
 
     if action==1:
-        chiffrerTexte(alphabet,True)
+        chiffrer_texte(alphabet,True)
     elif action==2:
-        chiffrerTexte(alphabet,False)
+        chiffrer_texte(alphabet,False)
     elif action==3:
-        cryptanalyseForceBrute(alphabet,True)
+        cryptanalyse_force_brute(alphabet,True)
     elif action==4:
-        cryptanalyseFrequentielle()
+        cryptanalyse_frequentielle()
     elif action==5:
-        cryptanalyseForceBrute(alphabet,False)
+        cryptanalyse_force_brute(alphabet,False)
     else:
         exit()

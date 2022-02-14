@@ -1,13 +1,6 @@
 # Cryptologie-César-python
 Cryptographie ( chiffrement et dechiffrement ) et cryptanalyse du chiffrement de Cesar en Python.
 
-## Lancement du programme principal
-`python3 main.py`
-
-* L'utilisateur peut definir son propre alphabet ou laisser l'alphabet par defaut (si c'est demandé).
-* Le fichier "texteAChiffrer.txt" contient un texte en clair
-* Le fichier "texteChiffre.txt" contient un texte chiffré par la méthode de César
-
 ## Chiffrer et dechiffrer ( chiffrement.py )
 * L'utilisateur peut definir son propre alphabet.
 * Les lettres de l'alphabet doivent être en minuscule. ex:alphabet="abcdef0123!?"
@@ -34,11 +27,11 @@ print(resultat)
 * Pour voir tous les chiffrements possible d'un texte, le booleen "casser" doit etre à False.
 
 ```
-from bruteForce import forceBrute
+from bruteForce import force_brute
 alphabet="abcdefghijklmnopqrstuvwxyz"
 texte="test"
 casser=True
-resultat=forceBrute(alphabet,texte,casser)
+resultat=force_brute(alphabet,texte,casser)
 print(resultat)
 ```
 
@@ -51,6 +44,6 @@ print(resultat)
 from analyseFrequentielle import *
 texte="Ru ojdc exhjpna, élarejrc Vxwcjrpwn. Lnuj anwm vxmnbcn, jsxdcjrc Oujdknac. Xw exhjpn yxda lqjwpna, wxw mn urnd, vjrb m’rménb, anwlqéarbbjrc Cjrwn. Nc br l’écjrc cxdc un lxwcajran. Mjwb dw pdrmn mn exhjpn bda u’Rwmxlqrwn mn 1923, jyaèb dwn yjpn mn ydkurlrcé yxda uj vjrbxw Armnc & Lrn, javdarna jd lnwcan mn Qjwxr, oxdawrbbjwc javnb nc vdwrcrxwb mn lqjbbn nc mn pdnaan, cxdb jllnbbxranb yxda lqjbbndab nc cxdarbcnb, yrbcxuncb jdcxvjcrzdnb xd ljajkrwnb, jejwc vêvn zdn wn bxrc éexzdén uj ... "
 langue="Français"
-cle,resultat=analyseFrequentielle(langue,texte)
+cle,resultat=analyse_frequentielle(langue,texte)
 print(cle,"\n",resultat)
 ```
