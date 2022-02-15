@@ -2,8 +2,7 @@
 import string
 
 def chiffrement(alphabet,texte,cle,chiffrer):
-    """
-        Chiffre/Dechiffre un texte par la méthode de Cesar
+    """Chiffre/Dechiffre un texte par la méthode de Cesar
 
         Args:
             - alphabet (string ou liste de caractere): l'alphabet
@@ -13,9 +12,11 @@ def chiffrement(alphabet,texte,cle,chiffrer):
         Returns:
             - resultat (string) : le texte obtenu après le chiffrement/dechiffrement
     """
+
     resultat = ""
     if not chiffrer:
         cle = cle*(-1)
+
     for caractere in texte:
         caractere_lower = caractere.lower()
         if caractere_lower in alphabet:
@@ -26,11 +27,11 @@ def chiffrement(alphabet,texte,cle,chiffrer):
                 resultat += alphabet[index_nouveau_caractere]
         else:
             resultat += caractere
+
     return resultat
 
 def chiffrer_texte(alphabet,chiffrer):
-    """
-        Chiffre/Dechiffre un texte saisi par l'utilisateur par la méthode de Cesar
+    """Chiffre/Dechiffre un texte saisi par l'utilisateur par la méthode de Cesar
 
         Args:
             - alphabet (string ou liste de caractere): l'alphabet
@@ -38,6 +39,7 @@ def chiffrer_texte(alphabet,chiffrer):
         Returns:
             - resultat (string) : le texte obtenu après le chiffrement/dechiffrement
     """
+
     if chiffrer:
         print("Chiffrer un texte\n*********************")
         texte_input = "\tSaisissez le texte à chiffrer\n\t>"
