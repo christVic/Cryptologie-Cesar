@@ -13,10 +13,10 @@ def read_frequences():
     f = open('frequences.txt',"r")
     fichier = f.read().strip()
     #ex : Francais=a/b/c/d/.../z;
-    groupes = fichier.split(";")
+    lignes = fichier.split(";")
     f.close()
-    for groupe in groupes:
-        langage = groupe.split("=")
+    for ligne in lignes:
+        langage = ligne.split("=")
         key = langage[0]
         value = langage[1].split("/")
         frequences[key] = value
