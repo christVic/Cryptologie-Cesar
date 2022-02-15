@@ -3,6 +3,16 @@ import string
 from chiffrement import chiffrement
 
 def force_brute(alphabet,texte,casser):
+    """
+        réalise une attaque par force brute sur le texte
+
+        Args:
+            - alphabet (string ou liste de caractere): l'alphabet
+            - texte (string) : le texte à chiffrer/dechiffrer
+            - casser (booleen) : indique si l'on veut effectuer un chiffrement (True) ou un dechiffrement (False).
+        Returns:
+            - resultat (dictionaire) : les textes obtenus après le chiffrement/dechiffrement selon les differentes clés possibles
+    """
     resultats={}
 
     chiffrer=True
@@ -14,6 +24,14 @@ def force_brute(alphabet,texte,casser):
     return resultats
 
 def cryptanalyse_force_brute(alphabet,casser):
+    """
+        réalise une attaque force brute sur un un texte  saisi par l'utilisateur par la méthode de Cesar
+
+        Args:
+            - alphabet (string ou liste de caractere): l'alphabet
+            - casser (booleen) : indique si l'on veut trouver tous les dechiffrements (True) ou tous les chiffrements possibles (False).
+    """
+
     if casser:
         print("Cryptanalyser un texte par brute force\n***************************")
         texte_input="\tSaisissez le texte à attaquer\n\t>"
