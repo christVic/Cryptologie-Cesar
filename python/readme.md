@@ -4,7 +4,7 @@ Cryptographie ( chiffrement et dechiffrement ) et cryptanalyse du chiffrement de
 ## Chiffrer et dechiffrer ( chiffrement.py )
 * L'utilisateur peut definir son propre alphabet.
 * Les lettres de l'alphabet doivent être en minuscule. ex:alphabet="abcdef0123!?"
-* L'utilisateur doit definir un clé d chiffrement/dechiffrement.
+* L'utilisateur doit definir un clé de chiffrement/dechiffrement.
 * Le texte à traiter peut contenir des lettres majuscules. ex:Il était une Fois
 * Les caracteres/lettres du texte qui ne sont pas dans l'alphabet ne sont pas modifiées lors du chiffrement/dechiffrement.
 * Pour chiffrer(dechiffrer) un texte, le booleen "chiffrer" doit etre à True(False).
