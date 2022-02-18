@@ -7,6 +7,5 @@ Ces programmes permettent de
 * décrypter/casser un message chiffré par la méthode de César ( attaque brute-force et attaque par analyse des frequences )
 
 ## PYTHON
-Le dossier "python" contient le programme réalisé en Python et un fichier readme.md qui donne plus d'informations sur le programme
-### Lancement du programme
-* python3 python/main.py
+Le dossier "python" contient l'implementation en Python et un fichier readme.md qui donne plus d'informations sur le programme
+
