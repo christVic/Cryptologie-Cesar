@@ -53,8 +53,8 @@ def analyse_frequentielle(langue,texte):
     - langue (string) : la langue du texte d'origine
     - texte (string) : le texte à attaquer
     Returns:
-    - cle (string) : la clé trouvée
-    - resultat (string) : le texte decrypter
+    - cle (int) : la clé trouvée
+    - resultat (string) : le texte decrypté
     """
 
     alphabet  = string.ascii_lowercase
@@ -101,7 +101,7 @@ def cryptanalyse_frequentielle():
     if langue_input == 1:
         langue = "Anglais"
 
-    print("\tLe texte à attaquer ne doit contenir que des lettres de l'alphabet(",alphabet,") peut importe la casse")
+    print("\tLe texte à attaquer ne doit contenir que des lettres de l'alphabet peut importe la casse")
     texte = input("\tSaisissez le texte à attaquer\n\t>")
     while not texte:
         print("le texte ne peut pas etre vide")

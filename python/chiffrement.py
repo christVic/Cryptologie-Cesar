@@ -55,6 +55,8 @@ def chiffrer_texte(alphabet,chiffrer):
         alphabet = alphabet_input
 
     cle = int(input("\tQuelle clé(un entier) souhaitez-vous utiliser?(ex:3)\n\t>"))
+    while cle < 0:
+        cle = int(input("\tQuelle clé(un entier) souhaitez-vous utiliser?(ex:3)\n\t>"))
 
     print("\tLe texte est formé à partir des mots de l'alphabet choisi et peut contenir des lettres majuscules.")
     texte = input(texte_input)
